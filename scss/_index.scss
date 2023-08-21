@@ -1,0 +1,60 @@
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 120px;
+    img {
+      width: 120px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    button {
+      border: none;
+      background: #9c88ff;
+      font-family: $fontMain;
+      padding: 10px 20px;
+      font-weight: 500;
+      color: $mainColor;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.5s;
+      &:hover {
+        transition: 0.5s;
+        background: #8c7ae6;
+      }
+    }
+    button:last-child {
+      background: #e84118;
+      &:hover {
+        transition: 0.5s;
+        background: #c23616;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mainIndex {
+  }
+}
+
+@media (min-width: 992px) {
+  .mainIndex {
+  }
+}

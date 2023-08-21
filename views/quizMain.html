@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Quiz Saga</title>
+  </head>
+  <body>
+    <main class="main" id="quizMain">
+      <section class="main__progressBar">
+        <div id="container"></div>
+      </section>
+      <section class="main__questions">
+        <article class="main__questions__sec1">
+          <h3 id="txtQuestion">Pregunta</h3>
+          <span id="counter">1/10</span>
+        </article>
+        <article class="main__questions__sec2" id="questions">
+          <button class="btnquestion">A. Porque no es lo necesario</button>
+          <button class="btnquestion">A. Porque no es lo necesario</button>
+          <button class="btnquestion">A. Porque no es lo necesario</button>
+          <button class="btnquestion">A. Porque no es lo necesario</button>
+        </article>
+        <figure class="main__questions__sec3" id>
+          <img src="../img/back.png" alt="" id="imgBack" />
+        </figure>
+      </section>
+    </main>
+    <section
+      class="score hidden animate__animated animate__bounceInUp"
+      id="results"
+    >
+      <h1>Juego terminado</h1>
+      <h3>
+        Puntaje: <span id="lblscore"></span> Mayor puntaje obtenido:
+        <span id="lblscoreLocal"></span>
+      </h3>
+      <article id="answersSummary"></article>
+      <figure class="score__iconBack" id>
+        <img src="../img/back.png" alt="" id="imgBackScore" />
+      </figure>
+    </section>
+    <script src="../js/progressbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="../js/mainQuiz.js" type="text/javascript"></script>
+  </body>
+</html>
